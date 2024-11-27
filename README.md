@@ -3,7 +3,8 @@
 Members: [Alberto Espinosa Pérez](https://github.com/alberespi), [Sergio del Pino Garvi](https://github.com/sergiodelpi)
 
 Original authors: [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue-cao.me), [Han Hu](https://ancientmooner.github.io/), [Liwei Wang](http://www.liweiwang-pku.com/).
-Source repo: (https://github.com/Scalsol/mega.pytorch)
+
+Source repo: https://github.com/Scalsol/mega.pytorch
 
 ## NOTE
 This repository has three branches:
