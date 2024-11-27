@@ -1,8 +1,17 @@
 # Lab 2 - MEGA for Video Object Detection
 
-Members: [Alberto Espinosa Pérez](https://alberespi), Sergio del Pino Garvi
+Members: [Alberto Espinosa Pérez](https://github.com/alberespi), [Sergio del Pino Garvi](https://github.com/sergiodelpi)
 
-By [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue-cao.me), [Han Hu](https://ancientmooner.github.io/), [Liwei Wang](http://www.liweiwang-pku.com/).
+Original authors: [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue-cao.me), [Han Hu](https://ancientmooner.github.io/), [Liwei Wang](http://www.liweiwang-pku.com/).
+Source repo: (https://github.com/Scalsol/mega.pytorch)
+
+## NOTE
+This repository has three branches:
+- `master`: contains all the original files from the source repo.
+- `session1`: contains the modifications and files to execute `Lab session 1`
+- `session2`: contains the modifications and files to execute `Lab session 2`
+
+## Original README
 
 This repo is an official implementation of ["Memory Enhanced Global-Local Aggregation for Video Object Detection"](https://arxiv.org/abs/2003.12063), accepted by CVPR 2020. This repository contains a PyTorch implementation of our approach MEGA based on [maskrcnn_benchmark](https://github.com/facebookresearch/maskrcnn-benchmark), as well as some training scripts to reproduce the results on ImageNet VID reported in our paper. 
 
