@@ -15,6 +15,7 @@ The execution of `Lab session 1` can be done by following the steps below:
     git checkout session1
     ```
 2. Follow the steps in the `Install.md` or copy the following commands. Make sure to edit the `$PWD` to the desire working path:
+   
     ```bash
     conda create --name MEGA -y python=3.7
     source activate MEGA
@@ -53,6 +54,7 @@ The execution of `Lab session 1` can be done by following the steps below:
     ```
     
 3. In the `mega.pytorch\demo\predictor.py`, modify the following code to avoid the error in opencv:
+   
     Previous:
     ```
     cv2.putText(
@@ -69,12 +71,14 @@ The execution of `Lab session 1` can be done by following the steps below:
 4. Go to the `Main Results` section and download `single frame baseline`, I use `single-frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `mega.pytorch` folder.**
 
 5. Using `demo/README.md` instructions of the `Inference on a folder` mode, run the demo code using both BASE and MEGA approaches. We are using some test frames stored in `datasets/ILSVRC2015/DATA/DET/image_folder`:
+   
     BASE:
     ```bash
         python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth \
             --visualize-path datasets/ILSVRC2015/Data/image_folder --suffix ".JPEG"\
             --output-folder visualization
     ```
+    
     MEGA:
     ```bash
         python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth \
