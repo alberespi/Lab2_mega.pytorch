@@ -23,7 +23,6 @@ The execution of `Lab session 1` can be done by following the steps below:
     conda install ipython pip
     pip install ninja yacs cython matplotlib tqdm opencv-python scipy
     conda install pytorch=1.2.0 torchvision=0.4.0 cudatoolkit=10.0 -c pytorch
-    conda install -c conda-forge cudatoolkit-dev=10.0
 
     export INSTALL_DIR=$PWD
 
