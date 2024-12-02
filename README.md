@@ -43,8 +43,6 @@ The execution of `Lab session 1` can be done by following the steps below:
     python setup.py build_ext install
     
     cd $INSTALL_DIR
-    git clone https://github.com/Scalsol/mega.pytorch.git
-    cd mega.pytorch
     python setup.py build develop
 
     pip install 'pillow<7.0.0'
@@ -52,7 +50,7 @@ The execution of `Lab session 1` can be done by following the steps below:
     unset INSTALL_DIR
     ```
     
-3. In the `mega.pytorch\demo\predictor.py`, modify the following code to avoid the error in opencv:
+3. In the `demo\predictor.py`, modify the following code in line 610 to avoid the error in opencv:
    
     Previous:
     ```
