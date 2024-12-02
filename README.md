@@ -71,16 +71,12 @@ The execution of `Lab session 1` can be done by following the steps below:
    
     BASE:
     ```bash
-        python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth \
-            --visualize-path datasets/ILSVRC2015/image_folder --suffix ".JPEG"\
-            --output-folder visualization
+    python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --visualize-path datasets/ILSVRC2015/image_folder --suffix ".JPEG" --output-folder visualization
     ```
     
     MEGA:
     ```bash
-        python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth \
-            --visualize-path datasets/ILSVRC2015/image_folder \
-            --suffix ".JPEG" --output-folder visualization_mega
+    python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --visualize-path datasets/ILSVRC2015/image_folder --suffix ".JPEG" --output-folder visualization_mega
     ```
 
     To generate a video from the frames add the flag `--output-video` at the end of the command.
