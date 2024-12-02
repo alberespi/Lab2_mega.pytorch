@@ -65,7 +65,7 @@ The execution of `Lab session 1` can be done by following the steps below:
             )
     ```
     
-4. Go to the `Main Results` section and download `single frame baseline`, I use `single-frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `mega.pytorch` folder.**
+4. Go to the `Main Results` section and download `single frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `Lab2_mega.pytorch` folder.**
 
 5. Using `demo/README.md` instructions of the `Inference on a folder` mode, run the demo code using both BASE and MEGA approaches. We are using some test frames stored in `datasets/ILSVRC2015/DATA/DET/image_folder`:
    
