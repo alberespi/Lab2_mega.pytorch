@@ -33,3 +33,9 @@ dist/
 
 # project dirs
 /models
+
+/apex*
+/cityscapesScripts*
+/cocoapi*
+
+/visualization*
