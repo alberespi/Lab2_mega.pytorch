@@ -76,21 +76,17 @@ The execution of `Lab session 2` can be done by following the steps below:
    
     BASE:
     ```bash
-    python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --video \
-        --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g01_c01.avi \
-        --output-folder visualization_WalkingWithDog_g01_c01
+    python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --video --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g01_c01.avi --output-folder visualization_WalkingWithDog_g01_c01
     ```
     
     MEGA:
     ```bash
-    python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --video \
-        --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g10_c03.avi \
-        --output-folder visualization_mega_WalkingWithDog_g10_c03.avi
+    python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --video --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g10_c03.avi --output-folder visualization_mega_WalkingWithDog_g10_c03.avi
     ```
 
     To generate a video from the frames add the flag `--output-video` at the end of the command.
 
-    Outputs are available in `visualization_[SUFFIX]` and `visualization_mega_[SUFFIX]` for BASE and MEGA approaches respectively.
+    Outputs are available in `visualization_[SUFFIX]` and `visualization_mega_[SUFFIX]` used in the examples for BASE and MEGA approaches respectively.
 
 ## Main Results
 
