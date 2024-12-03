@@ -23,7 +23,6 @@ The execution of `Lab session 2` can be done by following the steps below:
     conda install ipython pip
     pip install ninja yacs cython matplotlib tqdm opencv-python scipy
     conda install pytorch=1.2.0 torchvision=0.4.0 cudatoolkit=10.0 -c pytorch
-    conda install -c conda-forge cudatoolkit-dev=10.0
 
     export INSTALL_DIR=$PWD
 
@@ -66,7 +65,7 @@ The execution of `Lab session 2` can be done by following the steps below:
             )
     ```
     
-4. Go to the `Main Results` section and download `single frame baseline`, I use `single-frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `mega.pytorch` folder.**
+4. Go to the `Main Results` section and download `single frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `Lab2_mega.pytorch` folder.**
 
 5. Using `demo/README.md` instructions of the `Inference on a video` mode, run the demo code using both BASE and MEGA approaches. We are using some test videos stored in `datasets/ILSVRC2015/VID/`:
 
