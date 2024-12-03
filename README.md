@@ -6,13 +6,13 @@ Original authors: [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue
 
 Source repo: https://github.com/Scalsol/mega.pytorch
 
-The execution of `Lab session 1` can be done by following the steps below:
+The execution of `Lab session 2` can be done by following the steps below:
 
 ## Steps:
 1. ```
     git clone https://github.com/alberespi/Lab2_mega.pytorch.git
     cd Lab2_mega.pytorch/
-    git checkout session1
+    git checkout session2
     ```
 2. Follow the steps in the `Install.md` or copy the following commands. Make sure to edit the `$PWD` to the desire working path:
    
@@ -44,8 +44,6 @@ The execution of `Lab session 1` can be done by following the steps below:
     python setup.py build_ext install
     
     cd $INSTALL_DIR
-    git clone https://github.com/Scalsol/mega.pytorch.git
-    cd mega.pytorch
     python setup.py build develop
 
     pip install 'pillow<7.0.0'
@@ -70,25 +68,30 @@ The execution of `Lab session 1` can be done by following the steps below:
     
 4. Go to the `Main Results` section and download `single frame baseline`, I use `single-frame baseline` and `MEGA` model checkpoints (backbone ResNet-101). **Place model `R_101.pth` and `MEGA_R_101.pth` in the `mega.pytorch` folder.**
 
-5. Using `demo/README.md` instructions of the `Inference on a folder` mode, run the demo code using both BASE and MEGA approaches. We are using some test frames stored in `datasets/ILSVRC2015/DATA/DET/image_folder`:
+5. Using `demo/README.md` instructions of the `Inference on a video` mode, run the demo code using both BASE and MEGA approaches. We are using some test videos stored in `datasets/ILSVRC2015/VID/`:
+
+   The command line should be like this:
+   ```bash
+       python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--  output-video]
+   ```
    
     BASE:
     ```bash
-        python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth \
-            --visualize-path datasets/ILSVRC2015/Data/image_folder --suffix ".JPEG"\
-            --output-folder visualization
+    python demo/demo.py base configs/vid_R_101_C4_1x.yaml R_101.pth --video \
+        --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g01_c01.avi \
+        --output-folder visualization_WalkingWithDog_g01_c01
     ```
     
     MEGA:
     ```bash
-        python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth \
-            --visualize-path datasets/ILSVRC2015/Data/image_folder \
-            --suffix ".JPEG" --output-folder visualization_mega
+        python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --video \
+            --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g10_c03.avi \
+            --output-folder visualization_mega_WalkingWithDog_g10_c03.avi
     ```
 
     To generate a video from the frames add the flag `--output-video` at the end of the command.
 
-    Outputs are available in `visualization` and `visualization_mega` for BASE and MEGA approaches respectively.
+    Outputs are available in `visualization_[SUFFIX]` and `visualization_mega_[SUFFIX]` for BASE and MEGA approaches respectively.
 
 ## Main Results
 
