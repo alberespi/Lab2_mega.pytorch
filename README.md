@@ -1,4 +1,4 @@
-# Lab 2 Session 1 - MEGA for Video Object Detection
+# Lab 2 Session 2 - MEGA for Video Object Detection
 
 Authors: [Alberto Espinosa Pérez](https://github.com/alberespi), [Sergio del Pino Garvi](https://github.com/sergiodelpi)
 
