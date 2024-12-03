@@ -33,3 +33,11 @@ dist/
 
 # project dirs
 /models
+
+
+/visualization*
+/datasets/ILSVRC2015/VID*
+
+/apex*
+/cityscapesScripts*
+/cocoapi*
