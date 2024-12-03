@@ -72,7 +72,7 @@ The execution of `Lab session 2` can be done by following the steps below:
 
    The command line should be like this:
    ```bash
-       python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--  output-video]
+   python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--  output-video]
    ```
    
     BASE:
@@ -84,9 +84,9 @@ The execution of `Lab session 2` can be done by following the steps below:
     
     MEGA:
     ```bash
-        python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --video \
-            --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g10_c03.avi \
-            --output-folder visualization_mega_WalkingWithDog_g10_c03.avi
+    python demo/demo.py mega configs/MEGA/vid_R_101_C4_MEGA_1x.yaml MEGA_R_101.pth --video \
+        --visualize-path datasets/ILSVRC2015/VID/v_WalkingWithDog_g10_c03.avi \
+        --output-folder visualization_mega_WalkingWithDog_g10_c03.avi
     ```
 
     To generate a video from the frames add the flag `--output-video` at the end of the command.
