@@ -36,7 +36,6 @@ dist/
 
 
 /visualization*
-/datasets/ILSVRC2015/VID*
 
 /apex*
 /cityscapesScripts*
